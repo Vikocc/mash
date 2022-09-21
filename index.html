@@ -25,61 +25,128 @@
 
       body {
         font-family: "Playfair Display", serif;
-        background-color: #f8f9fa;
+      
         margin: 0;
       }
 
+    
+      
+
+      
       .describe {
         font-size: 26px;
         text-align: center;
         font-weight: 300;
         color: white;
-        padding: 19px 20px 17px;
-         background-color: rgba(248, 248, 248, 0.3);
-      }
-
-      .and {
-        font-family: "Times New Roman", Times, serif;
-      }
-        #contact {
-        width: 200px;
-        padding: 19px 20px 17px;
-        border-radius: 0px;
-        background: transparent;
-        color: #000;
-        font: 700 12px/1 "Circe", Arial, Helvetica, sans-serif;
+        position: relative;
+        margin-top: -222px;
         text-transform: uppercase;
-        text-align: center;
-        letter-spacing: 1.2px;
-        transition: all 0.5s ease;
-        border: 1px solid #000;
-        text-decoration: none;
-        display: block;
-        margin: 0 auto;
-        background-color: rgba(248, 248, 248, 0.3);
-        margin-bottom: 15px;
       }
-      
 
-      .ma{
+      
+       
+
+#contacts {
+  width: 200px;
+  padding: 19px 20px 17px;
+  border-radius: 0px;
+  font-family: "Circe", Arial, Helvetica, sans-serif;
+  text-align: center;
+  letter-spacing: 1.2px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  background: none;
+  border: 0 none;
+  -webkit-appearance: none;
+  font-size: 14px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;  
+ }
+
+
+      
+.bt{
+position: relative;
+margin-top: 43px;
+}
+ .bt1{
+position: relative;
+margin-top: 0;
+}     
+        
+
+      .mass{
+        font-size: 26px;
+        text-align: center;
+        font-weight: 300;
+        color: white;
         position: relative;
-        margin-top: -180px;
-      }
-         .mas{
-        position: relative;
-        margin-top: -245px;
+        margin-top: -250px;
+        text-transform: uppercase;
       }
       @media (max-width: 1920px){
 .container {
     max-width: 100%;
 }}
-      
+
+@media(min-width: 1055px){
+  .bt{
+position: relative;
+margin-top: 71px;
+}
+ .describe {
+   margin-top: -246px;
+}
+.bt1{
+position: relative;
+margin-top: 40px;}
+}
+
+@media(max-width: 576px){
+  .describe, .mass {
+    font-size: 23px;
+    text-align: center;
+    }
+  .mass{
+    margin-bottom: 23px;
+  }
+  .des{
+    position: relative;
+    margin-top: -16px;
+    margin-bottom: 114px;
+  }
+  .des1{
+    position: relative;
+    margin-top: -16px;
+    margin-bottom: 92px;
+  }
+  .nav{
+    position: fixed;
+    top:0;
+    right: 0;
+  }
+   .navbar-toggler {
+    
+    border: none;}
+     #navbarNav {
+          background-color: rgba(214, 207, 207, 0.6);
+        }
+}
+#navbarNav {
+        background-color: transparent;
+      }
+
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-light nav" style="background-color: transparent">
+    
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Logo MD</a>
+    
         <button
           class="navbar-toggler"
           type="button"
@@ -92,71 +159,70 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse justify-content-end"
+          class="collapse navbar-collapse justify-content-end p-3 rounded" style="background-color:rgba(214, 207, 207, 0.6) ;"
           id="navbarNav"
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >About me</a
+
+              <a class="nav-link active" aria-current="page" href="about-me.html"
+                >O mnie</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
+              <a class="nav-link active" href="services.html">Usługi offline</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Price</a>
+              <a class="nav-link active" href="contact.html">Szkoła stylu</a>
             </li>
              <li class="nav-item">
-              <a class="nav-link" href="contact.html">School of style</a>
+              <a class="nav-link active" href="contact.html">Cennik</a>
             </li>
       
              <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link active" href="contact.html">Kontak</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="container p-0 m-0 w-100">
+    <div class="container">
       <div class="row">
-        <div class="col-md-4 p-0 m-0">
-          <img src="glav.jpg" class="img-fluid masha" alt="" />
-          <div class="mas">
-          <h1 class="describe">
-            PERSONAL <span class="and">&</span> FASHION STYLIST </BR>MARIIA DVORIKOVA
+        <div class="col-md-4 p-0">
+          <img src="ma.jpg" class="img-fluid" alt="" />
+          <div class="des">
+          <h1 class="mass">
+            Twoja Osobista Stylistka </br> Maria Dvorikova
           </h1>
-         <div class="buton mt-5 mb-2">
-            <a href="#" id="contact">Contact</a>
+         <div class="buton mb-2 bt1">
+            <a href="about-me.html" id="contacts">O mnie</a>
           </div>
           </div>
         </div>
-        <div class="col-md-4 p-0 m-0 ">
-          <img src="glav2.jpg" class="img-fluid masha" alt="" />
-          <div class="ma">
-          <h1 class="describe">OFFLINE SERVICES</h1>
-          <div class="buton mt-5 mb-2">
-            <a href="#" id="contact">Contact</a>
+        <div class="col-md-4 p-0  ">
+          <img src="mar.jpg" class="img-fluid" alt="" />
+          <div class="des1">
+          <h1 class="describe">Usługi offline</h1>
+          <div class="buton  bt">
+            <a href="#" id="contacts">Kontakt</a>
           </div>
           </div>
         </div>
         
-        <div class="col-md-4 p-0">
-          <img src="md1.jpg" class="img-fluid masha" alt=""/>
+        <div class="col-md-4 p-0 ">
+          <img src="mashh.jpg" class="img-fluid"  alt=""/>
           <div class="ma">
-          <h1 class="describe">SCHOOL OF STYLE</h1>
-          <div class="buton mt-5 mb-2">
-            <a href="#" id="contact">Contact</a>
+          <h1 class="describe">Szkoła stylu</h1>
+          <div class="buton  bt">
+            <a href="#" id="contacts">Kontakt</a>
           </div>
           </div>
         </div>
       </div>
     </div>
 
-    
+ 
 
-    
-    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"

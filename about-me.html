@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O mnie</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        max-width: 1020px;
+        display: block;
+        margin: 0 auto;
+      }
+      #navbarNav {
+        background-color: transparent;
+      }
+      .l {
+        animation: myAnim 3s ease-in 0s 1 normal none;
+      }
+
+      @keyframes myAnim {
+        0% {
+          opacity: 0;
+          transform: translateX(50px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      #direct {
+        width: 200px;
+        padding: 19px 20px 17px;
+        border-radius: 0px;
+        font-family: "Circe", Arial, Helvetica, sans-serif;
+        text-align: center;
+        letter-spacing: 1.2px;
+        transition: all 0.5s ease;
+        text-decoration: none;
+        background: none;
+        border: 0 none;
+        -webkit-appearance: none;
+        font-size: 14px;
+        color: black;
+        border: 1px solid black;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      p {
+        color: #979797;
+        font-size: 16px;
+        font-family: "Playfair Display", serif;
+      }
+      @media (max-width: 576px) {
+        p {
+          font-size: 23px;
+        }
+
+        .nav {
+          position: fixed;
+          top: 0;
+          right: 0;
+        }
+        .navbar-toggler {
+          border: none;
+        }
+        #navbarNav {
+          background-color: rgba(214, 207, 207, 0.6);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-md navbar-light nav"
+      style="background-color: transparent"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end p-3 rounded"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="about-me.html"
+                >O mnie</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="services.html">Usługi offline</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Szkoła stylu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Cennik</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container m-5">
+      <div class="row about-me">
+        <div class="col-md-6">
+          <h1 id="about-me">Maria Dvorikova</h1>
+          <h2>twoja Osobista Stylistka</h2>
+          <p>
+            желание или потребность перемен. Не только общество, но во многом и
+            мы сами воспринимаем себя, через призму внешности. Внутренние
+            перемены или изменения социального статуса всегда ведут к обновлению
+            гардероба. необходимость транслировать определенный образ. Сейчас
+            набирает обороты понятие «личного бренда».
+          </p>
+          <div class="buton mb-2 bt1">
+            <a
+              href="https://www.instagram.com/maria_dvorikova_stylistka/"
+              id="direct"
+              >Kontakt</a
+            >
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <img src="glav.jpg" class="img-fluid l" width=360px"" alt=""/>
+        </div>
+
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+          crossorigin="anonymous"
+        ></script>
+      </div>
+    </div>
+  </body>
+</html>
