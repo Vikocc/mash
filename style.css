@@ -136,7 +136,11 @@ body {
     border: none;
   }
   #navbarNav {
-    padding: 20px 20px 60px 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    padding: 20px 40px 364px 40px;
     background-color: rgba(214, 207, 207, 0.9);
   }
   .name {
