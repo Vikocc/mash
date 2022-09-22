@@ -107,20 +107,35 @@ margin-top: 40px;}
 }
 
   .about1{
-        animation: myAnim 3s ease-in 0s 1 normal none;
+        animation: myAnim 3s ease 1s 1 normal forwards;
       }
 
-      @keyframes myAnim {
-        0% {
-          opacity: 0;
-          transform: translateX(50px);
-        }
+   @keyframes myAnim {
+	0% {
+		transform: scale(0.5);
+		transform-origin: 100% 50%;
+	}
 
-        100% {
-          opacity: 1;
-          transform: translateX(0);
-        }
-      }
+	100% {
+		transform: scale(1);
+		transform-origin: 100% 50%;
+	}
+}
+
+.about2{
+  animation: myAnim 3s ease 1s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		transform: scale(0.5);
+		transform-origin: 0% 50%;
+	}
+
+	100% {
+		transform: scale(1);
+		transform-origin: 0% 50%;
+	}
+}
 
 @media(max-width: 576px){
   .describe, .mass {
@@ -172,17 +187,23 @@ margin-top: 40px;}
         h3{
           font-size: 14px;
           font-family: 'Open Sans',Arial,sans-serif;
-           text-transform: uppercase;
+           line-height: 22px;
         }
-        .about1{
-          width: 140px;
-          box-shadow: 34px 47px 0px 8px #BFBFBF
+        .about1, .about2{
+          width: 190px;
+          box-shadow: 28px 25px 0px 4px #F7F1ED
+
         }
 
         .description-about{
           position: relative;
           margin-top: 50px;
+        
           font-family: 'Open Sans',Arial,sans-serif;
+        }
+        .sec{
+          margin-top: 40px;
+
         }
 }
 #navbarNav {
@@ -276,6 +297,7 @@ footer{
    
         <h1 id="about-me">Maria Dvorikova</h1>
         <h2>twoja Osobista Stylistka</h2>
+        <div class="container">
           <div class="row">
             <div class="col-5 description-about">
               <div><h3>Помогу тебе стать стильной с легкостью.</h3></div>
@@ -285,7 +307,20 @@ footer{
               <img src="glav.jpg" class="about1" alt="">
             </div>
           </div>
-      
+        </div>
+      <div class="container sec">
+          <div class="row">
+             <div class="col-7">
+              <img src="glav2.jpg" class="about2" alt="">
+            </div>
+            <div class="col-5 description-about">
+              <div><h3>Помогу тебе стать стильной с легкостью.</h3></div>
+              <div><h3>Раскрою твою индивидуальность</h3></div>
+            </div>
+           
+          </div>
+        </div>
+
     </div>
 
  
