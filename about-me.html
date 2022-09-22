@@ -13,7 +13,6 @@
     />
     <style>
       body {
-        max-width: 1020px;
         display: block;
         margin: 0 auto;
       }
@@ -59,8 +58,21 @@
         font-family: "Playfair Display", serif;
       }
       @media (max-width: 576px) {
+        .photo {
+          position: relative;
+          right: 0;
+        }
+        .l {
+          width: 140px;
+        }
+        h1 {
+          font-size: 26px;
+        }
+        h2 {
+          font-size: 16px;
+        }
         p {
-          font-size: 23px;
+          font-size: 14px;
         }
 
         .nav {
@@ -72,7 +84,7 @@
           border: none;
         }
         #navbarNav {
-          background-color: rgba(214, 207, 207, 0.6);
+          background-color: rgba(214, 207, 207, 0.8);
         }
       }
     </style>
@@ -83,6 +95,7 @@
       style="background-color: transparent"
     >
       <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Home</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -124,28 +137,34 @@
         </div>
       </div>
     </nav>
-    <div class="container m-5">
+    <div class="container m-3">
       <div class="row about-me">
-        <div class="col-md-6">
+        <div class="col-sm-8">
           <h1 id="about-me">Maria Dvorikova</h1>
           <h2>twoja Osobista Stylistka</h2>
-          <p>
-            желание или потребность перемен. Не только общество, но во многом и
-            мы сами воспринимаем себя, через призму внешности. Внутренние
-            перемены или изменения социального статуса всегда ведут к обновлению
-            гардероба. необходимость транслировать определенный образ. Сейчас
-            набирает обороты понятие «личного бренда».
-          </p>
-          <div class="buton mb-2 bt1">
-            <a
-              href="https://www.instagram.com/maria_dvorikova_stylistka/"
-              id="direct"
-              >Kontakt</a
-            >
-          </div>
         </div>
-        <div class="col-sm-6">
-          <img src="glav.jpg" class="img-fluid l" width=360px"" alt=""/>
+        <div class="col-sm-4 photo">
+          <img src="glav.jpg" class="l" width="50%"" alt=""/>
+        </div>
+        <div class="row">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-8">
+            <p>
+              желание или потребность перемен. Не только общество, но во многом
+              и мы сами воспринимаем себя, через призму внешности. Внутренние
+              перемены или изменения социального статуса всегда ведут к
+              обновлению гардероба. необходимость транслировать определенный
+              образ. Сейчас набирает обороты понятие «личного бренда».
+            </p>
+            <div class="buton mb-2 bt1">
+              <a
+                href="https://www.instagram.com/maria_dvorikova_stylistka/"
+                id="direct"
+                target="_blank"
+                >Kontakt</a
+              >
+            </div>
+          </div>
         </div>
 
         <script

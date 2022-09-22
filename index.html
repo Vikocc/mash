@@ -106,6 +106,22 @@ position: relative;
 margin-top: 40px;}
 }
 
+  .about1{
+        animation: myAnim 3s ease-in 0s 1 normal none;
+      }
+
+      @keyframes myAnim {
+        0% {
+          opacity: 0;
+          transform: translateX(50px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
 @media(max-width: 576px){
   .describe, .mass {
     font-size: 23px;
@@ -133,7 +149,38 @@ margin-top: 40px;}
     
     border: none;}
      #navbarNav {
-          background-color: rgba(214, 207, 207, 0.6);
+      padding: 20px 20px 60px 20px;
+          background-color: rgba(214, 207, 207, 0.9);
+        }
+        .name{
+          margin-top: 120px;
+          
+          
+        }
+         h1 {
+          font-size: 26px;
+          text-align: center;
+        }
+        h2 {
+          font-size: 16px;
+           text-align: center;
+           margin-bottom: 40px;
+           
+        }
+
+        h3{
+          font-size: 14px;
+          font-family: 'Open Sans',Arial,sans-serif;
+        }
+        .about1{
+          width: 140px;
+          box-shadow: 34px 47px 0px 8px #BFBFBF
+        }
+
+        .description-about{
+          position: relative;
+          margin-top: 50px;
+          font-family: 'Open Sans',Arial,sans-serif;
         }
 }
 #navbarNav {
@@ -159,7 +206,7 @@ margin-top: 40px;}
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse justify-content-end p-3 rounded" style="background-color:rgba(214, 207, 207, 0.6) ;"
+          class="collapse navbar-collapse justify-content-end" style="background-color:rgba(214, 207, 207, 0.8) ;"
           id="navbarNav"
         >
           <ul class="navbar-nav">
@@ -219,6 +266,22 @@ margin-top: 40px;}
           </div>
         </div>
       </div>
+    </div>
+    
+    <div class="container name">
+   
+        <h1 id="about-me">Maria Dvorikova</h1>
+        <h2>twoja Osobista Stylistka</h2>
+          <div class="row">
+            <div class="col-5 description-about">
+              <div><h3>Помогу тебе стать стильной с легкостью.</h3></div>
+              <div><h3>Раскрою твою индивидуальность</h3></div>
+            </div>
+            <div class="col-7">
+              <img src="glav.jpg" class="about1" alt="">
+            </div>
+          </div>
+      
     </div>
 
  
