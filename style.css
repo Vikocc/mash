@@ -4,10 +4,21 @@
 
 body {
   font-family: "Playfair Display", serif;
-
   margin: 0;
 }
 
+p {
+  font-size: 14px;
+}
+h2 {
+  font-size: 16px;
+}
+
+.col {
+  padding: 20px;
+  border: 1px solid #f1f1f1;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
 .describe {
   font-size: 26px;
   text-align: center;
@@ -16,6 +27,59 @@ body {
   position: relative;
   margin-top: -222px;
   text-transform: uppercase;
+}
+
+#navbarNav {
+  background-color: transparent;
+}
+
+.navbar {
+  z-index: 999 !important;
+}
+
+.about1,
+.about2 {
+  width: 360px;
+  box-shadow: 28px 25px 0px 4px #f7f1ed;
+}
+
+.about1 {
+  margin-right: 40px;
+}
+.row2-about {
+  margin-top: 90px;
+}
+
+.description-about1 {
+  font-size: 16px;
+  background-color: #f7f1ed;
+  padding: 20px;
+  line-height: 1.55;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.description-about2 {
+  font-size: 16px;
+  background-color: #f7f1ed;
+  padding: 20px;
+  line-height: 1.55;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+#about1 {
+  position: relative;
+  margin-top: 130px;
+}
+
+#about-me,
+#about-me2 {
+  text-align: center;
+}
+
+#about-me2 {
+  margin-bottom: 40px;
 }
 
 #contacts {
@@ -37,6 +101,39 @@ body {
   border: 1px solid #ffffff;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.service-page {
+  text-align: center;
+  margin: 30px;
+}
+#buton {
+  width: 200px;
+  padding: 19px 20px 17px;
+  border-radius: 0px;
+  font-family: "Circe", Arial, Helvetica, sans-serif;
+  text-align: center;
+  letter-spacing: 1.2px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  background: none;
+  border: 0 none;
+  -webkit-appearance: none;
+  font-size: 14px;
+  color: black;
+  border: 1px solid black;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.service-item {
+  text-align: center;
+  font-weight: 700;
+  margin: 20px;
+  text-transform: uppercase;
 }
 
 .bt {
@@ -139,7 +236,6 @@ body {
     position: fixed;
     top: 50px;
     right: 0;
-
     padding: 20px 40px 364px 40px;
     background-color: rgba(214, 207, 207, 0.9);
   }
@@ -151,36 +247,34 @@ body {
     text-align: center;
     text-transform: uppercase;
   }
-  h2 {
-    font-size: 16px;
-    text-align: center;
-    margin-bottom: 40px;
+  .description-about1,
+  .description-about2,
+  .description-about3 {
+    font-size: 12px;
   }
 
-  h3 {
-    font-size: 14px;
-    font-family: "Open Sans", Arial, sans-serif;
-    line-height: 22px;
+  .description-about1,
+  .description-about2 {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .description-about-second {
+    margin-top: 0;
+    width: 100%;
   }
   .about1,
   .about2 {
     width: 190px;
     box-shadow: 28px 25px 0px 4px #f7f1ed;
+    margin-right: 10px;
   }
 
-  .description-about {
-    position: relative;
-    margin-top: 50px;
-
-    font-family: "Open Sans", Arial, sans-serif;
+  .about1 {
+    margin-right: 23px;
   }
-  .sec {
+
+  .row2-about {
     margin-top: 60px;
   }
-}
-#navbarNav {
-  background-color: transparent;
-}
-footer {
-  margin-top: 100px;
 }
