@@ -188,4 +188,8 @@ img {
     text-align: center;
     text-transform: uppercase;
   }
+
+  .service {
+    margin-bottom: 20px;
+  }
 }
