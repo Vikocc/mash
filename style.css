@@ -21,11 +21,13 @@ img {
   z-index: 999 !important;
 }
 
-.mariia-photo-main:hover img {
+.mariia-photo-main:hover img,
+.servise-section:hover img {
   transform: scale(1.1);
 }
 
-.mariia-photo-main {
+.mariia-photo-main,
+.servise-section {
   overflow: hidden;
 }
 
@@ -85,10 +87,6 @@ img {
   transition: all 0.5s ease;
 }
 
-.service-page {
-  text-align: center;
-  margin: 30px;
-}
 #buton {
   width: 200px;
   padding: 19px 20px 17px;
@@ -117,11 +115,25 @@ img {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
-.service-item {
+.service-item,
+.page-name {
   text-align: center;
   font-weight: 700;
   margin: 20px;
   text-transform: uppercase;
+}
+
+.page-name {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.about-service {
+  margin-top: 40px;
+}
+
+.price {
+  font-size: 24px;
 }
 
 @media (max-width: 1920px) {
