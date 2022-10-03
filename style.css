@@ -87,6 +87,10 @@ img {
   transition: all 0.5s ease;
 }
 
+.photo-about {
+  max-width: 360px;
+}
+
 #buton {
   width: 200px;
   padding: 19px 20px 17px;
@@ -137,7 +141,7 @@ img {
 }
 
 @media (max-width: 1920px) {
-  .container {
+  .container-start {
     max-width: 100%;
   }
 }
