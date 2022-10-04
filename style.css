@@ -140,6 +140,9 @@ img {
   font-size: 24px;
 }
 
+.photo-about {
+  max-width: 360px;
+}
 .about-mariia {
   margin-top: 60px;
 }
@@ -156,7 +159,7 @@ img {
   line-height: 28px;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
-  margin: 0;
+  margin-bottomglav.jpg: 0;
 }
 
 footer {
