@@ -87,10 +87,6 @@ img {
   transition: all 0.5s ease;
 }
 
-.photo-about {
-  max-width: 360px;
-}
-
 #buton {
   width: 200px;
   padding: 19px 20px 17px;
@@ -134,10 +130,51 @@ img {
 
 .about-service {
   margin-top: 40px;
+  font-weight: 300;
+  line-height: 1.55;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .price {
   font-size: 24px;
+}
+
+.about-mariia {
+  margin-top: 60px;
+}
+
+.about-mariia h2 {
+  margin-bottom: 35px;
+  font-weight: 400;
+  line-height: 28px;
+  font-size: 26px;
+}
+
+.about-mariia p {
+  font-weight: 300;
+  line-height: 28px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+footer {
+  margin-top: 60px;
+  padding: 20px;
+  background-color: black;
+}
+
+footer h1 {
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 25px;
+  font-family: "Open Sans", sans-serif;
+}
+
+footer .social-link a {
+  color: white;
 }
 
 @media (max-width: 1920px) {
@@ -195,5 +232,34 @@ img {
 
   .service {
     margin-bottom: 20px;
+  }
+
+  .about-mariia h1,
+  h2,
+  p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .about-mariia h1 {
+    font-weight: 500;
+    margin-top: 40px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  .about-mariia h2 {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+  }
+
+  .about-mariia img {
+    display: block;
+    margin: 0 auto;
+  }
+  .about-mariia .col-sm-6 {
+    padding: 0;
   }
 }
